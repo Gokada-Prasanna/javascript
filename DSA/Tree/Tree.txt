@@ -1,0 +1,93 @@
+A tree is a collection of entities called nodes.
+Nodes are connected by edgs and manages the relationship between nodes.
+Each node contians a value or data, and it may or may not have a child node.
+First node of the tree is called the "root node".
+Nodes which dont have child node are called "leaf nodes".
+If a node is connected to another node then that node is called "parent node" and the connected node is called "Child node".
+The data is organized in a "hierarchical way".
+The "height of a tree" if the length of the longest path to a leaf node.
+The "depth of a node" is the length of th epath to its root node.
+
+
+
+Height vs Depth of the tree:
+----------------------------
+The depth of a node is the number of edgs present in path from the root node of a tree to that node.
+
+The height of a node is the number of edges present in the longest path connecting that node to a leaf node.
+
+
+Binary Trees:
+-------------
+
+It's a tree data structure in which each node has at the most two children nodes, which are referred to as the left child and the right child.
+Each node has three attributes: value, left_child and right_child.
+
+
+
+-> If the height of the tree is "h". Then the max number of nodes of the tree is "2*h+1" and the min number of nodes of the tree is "h+1".
+-> When the binary tree is having minimum number of nodes means the tree is having maximum height. h+1
+-> maximum height of the tree is
+            n = h+1
+            h = n-1
+
+-> when the binary tree is having maximum number of nodes means the tree is having minimum height. 
+-> Minimum height of the tree is
+            n = 2h+1-1
+          n+1 = 2h+1
+     log(n+1) = log(2h+1) (apply log with base 2 on both sides)
+     log(n+1) = h+1
+            h = log(n+1) -1
+
+
+-> Every binary tree node has three components 
+        1. Data element
+        2. Pointer to left subtree
+        3. Pointer to right subtree
+
+Binary tree vs Binary Search tree:
+----------------------------------
+
+Terminologies:
+--------------
+Internal node: Inner nodes with at least one child node.
+External node: Node that doesn't have any child node.
+
+"Binary tree" is a nonlinear data structure where each node can have at most two child nodes.
+"Full Binary tree", "Complete binary tree", "Perfect Binary tree", "Balanced Binary Tree", "Degenerate Binary Tree".
+
+Full Binary Tree:
+----------------
+
+-> A binary tree that has either zero or two children.
+-> It means that all the nodes in that binary tree should either have two child nodes of its parent node or the parent node is itself the leaf node or the external node.
+->Formula to calculate the number of Leaf Nodes
+ L = l+1 (L is the number of leaf nodes and l is the number of internal nodes)
+
+
+Complete Binary Tree:
+--------------------
+
+-> Its a binary tree where all the tree levels are filled entirely with nodes, except the lowest level of the tree.
+-> Also, in th elast or the lowest level of this binary tree, every node should possibly reside on the left side. 
+
+Perfect Binary Tree:
+--------------------
+
+-> A binary tree is said to be "perfect" if all the internal nodes have strictly two children, and every external or leaf node is at the same level or same depth within a tree.
+-> A perfect binary tree having height "h" has "2h-1" node.
+
+Balanced Binary Tree:
+--------------------
+
+->A binary tree is said to be "balanced" if the tree height is O(logN), where 'N" is the number of nodes.
+-> In a balanced binary tree, the height of the left and right subtrees of each node should vary by at most one.
+-> An AVL tree and a red-black tree are some common examples of data structure that can generate a balanced binary search tree.
+
+
+Degenerate Binary Tree:
+-----------------------
+
+-> A binary tree is said to be a degenerate binary tree or pathological binary tree if every internal node has only a single child.
+-> Such trees are similar to a linked list performance-wise.
+

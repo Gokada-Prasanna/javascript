@@ -1,0 +1,7 @@
+Stack -> stack of files
+follows -> FILO (First In Last Out) principle
+Ex: Browser's back button feature
+Functions -> push, pop, peek, length 
+Javascript features -> The Object of Array feature of javascript support stack functionality and it has all the functions to support stack functions
+ 
+Stack Implementaion -> We can implement stack using javascript class method

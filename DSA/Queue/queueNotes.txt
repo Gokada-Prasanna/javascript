@@ -1,0 +1,3 @@
+Queue -> This data structure is a way to hold data. It is similar to stack but stack is first in last out but queue is last in first out 
+Priority Queue -> Not only pass the element into the queue. pass the element with the priority. elements passed with higher priority are sent to the beginning of the queue so all element with priority five are ahead of element with priority 4 if the element has the same priority they just behave like a normal queue 
+ 
